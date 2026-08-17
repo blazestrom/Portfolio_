@@ -133,7 +133,7 @@ export default function Contact() {
                   <Linkedin size={14} /> LinkedIn
                 </a>
                 <a 
-                  href="https://leetcode.com" 
+                  href="https://leetcode.com/u/blazestrome/" 
                   target="_blank" 
                   rel="noreferrer"
                   className="badge"
