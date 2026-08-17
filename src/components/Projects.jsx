@@ -3,108 +3,295 @@ import { Github, ExternalLink, Code2, Cpu, Zap, FolderGit2, Award } from 'lucide
 
 const projectsData = [
   {
-    title: 'JobTracker API',
-    year: '2026',
-    tech: ['Java', 'Spring Boot', 'PostgreSQL', 'Hibernate/JPA', 'JWT', 'Docker'],
-    metric: '40% DB Query Boost',
-    description: 'Architected a production-ready RESTful backend using Spring Boot, focusing on scalability, security, and low-latency database access.',
-    details: [
-      'Secured endpoints using Spring Security with JWT token authentication and Role-Based Access Control (RBAC).',
-      'Prevented JVM heap overhead on high-throughput requests using Spring Data Pageable limit-offset boundaries.',
-      'Tuned database access by 40% using PostgreSQL composite column indexes and resolving Hibernate N+1 fetch issues.'
+    title: "JobTracker API",
+    year: "2026",
+    tech: [
+      "Java",
+      "Spring Boot",
+      "PostgreSQL",
+      "Hibernate/JPA",
+      "JWT",
+      "Docker",
     ],
-    github: 'https://github.com/blazestrom/jobtracker-api',
-    type: 'backend',
+    metric: "40% DB Query Boost",
+    description:
+      "Architected a production-ready RESTful backend using Spring Boot, focusing on scalability, security, and low-latency database access.",
+    details: [
+      "Secured endpoints using Spring Security with JWT token authentication and Role-Based Access Control (RBAC).",
+      "Prevented JVM heap overhead on high-throughput requests using Spring Data Pageable limit-offset boundaries.",
+      "Tuned database access by 40% using PostgreSQL composite column indexes and resolving Hibernate N+1 fetch issues.",
+    ],
+    github: "https://github.com/blazestrom/jobtracker-api",
+    type: "backend",
     graphic: (
-      <svg viewBox="0 0 100 40" style={{ width: '100px', height: '40px', opacity: 0.85 }}>
+      <svg
+        viewBox="0 0 100 40"
+        style={{ width: "100px", height: "40px", opacity: 0.85 }}
+      >
         {/* SQL Indexes Representation */}
-        <rect x="5" y="10" width="20" height="20" rx="3" fill="var(--bg-tertiary)" stroke="var(--border-color)" />
-        <rect x="35" y="10" width="20" height="20" rx="3" fill="var(--bg-tertiary)" stroke="var(--border-color)" />
-        <rect x="65" y="10" width="30" height="20" rx="3" fill="rgba(56, 189, 248, 0.15)" stroke="var(--accent-cyan)" />
-        <path d="M 25 20 L 35 20" stroke="var(--accent-cyan)" strokeWidth="1.5" strokeDasharray="3,3" />
-        <path d="M 55 20 L 65 20" stroke="var(--accent-cyan)" strokeWidth="1.5" />
-        <text x="15" y="24" fontSize="8" fontFamily="var(--font-mono)" fill="var(--text-secondary)" textAnchor="middle">API</text>
-        <text x="45" y="24" fontSize="8" fontFamily="var(--font-mono)" fill="var(--text-secondary)" textAnchor="middle">JPA</text>
-        <text x="80" y="24" fontSize="8" fontFamily="var(--font-mono)" fill="var(--accent-cyan)" textAnchor="middle">DB (40%)</text>
+        <rect
+          x="5"
+          y="10"
+          width="20"
+          height="20"
+          rx="3"
+          fill="var(--bg-tertiary)"
+          stroke="var(--border-color)"
+        />
+        <rect
+          x="35"
+          y="10"
+          width="20"
+          height="20"
+          rx="3"
+          fill="var(--bg-tertiary)"
+          stroke="var(--border-color)"
+        />
+        <rect
+          x="65"
+          y="10"
+          width="30"
+          height="20"
+          rx="3"
+          fill="rgba(56, 189, 248, 0.15)"
+          stroke="var(--accent-cyan)"
+        />
+        <path
+          d="M 25 20 L 35 20"
+          stroke="var(--accent-cyan)"
+          strokeWidth="1.5"
+          strokeDasharray="3,3"
+        />
+        <path
+          d="M 55 20 L 65 20"
+          stroke="var(--accent-cyan)"
+          strokeWidth="1.5"
+        />
+        <text
+          x="15"
+          y="24"
+          fontSize="8"
+          fontFamily="var(--font-mono)"
+          fill="var(--text-secondary)"
+          textAnchor="middle"
+        >
+          API
+        </text>
+        <text
+          x="45"
+          y="24"
+          fontSize="8"
+          fontFamily="var(--font-mono)"
+          fill="var(--text-secondary)"
+          textAnchor="middle"
+        >
+          JPA
+        </text>
+        <text
+          x="80"
+          y="24"
+          fontSize="8"
+          fontFamily="var(--font-mono)"
+          fill="var(--accent-cyan)"
+          textAnchor="middle"
+        >
+          DB (40%)
+        </text>
       </svg>
-    )
+    ),
   },
   {
-    title: 'TripFace — AI Photo Discovery',
-    year: '2026',
-    tech: ['Python', 'FastAPI', 'React', 'InsightFace', 'SQLite', 'SSE'],
-    metric: '75% Scanning Boost',
-    description: 'Engineered a local facial recognition and indexing service utilizing state-of-the-art vision models to search personal Google Drive archives.',
+    title: "TripFace — AI Photo Discovery",
+    year: "2026",
+    tech: ["Python", "FastAPI", "React", "InsightFace", "SQLite", "SSE"],
+    metric: "75% Scanning Boost",
+    description:
+      "Engineered a local facial recognition and indexing service utilizing state-of-the-art vision models to search personal Google Drive archives.",
     details: [
-      'Leveraged ArcFace and RetinaFace frameworks to index facial embeddings locally.',
-      'Reduced discovery latency by 75% via concurrent FastAPI workers with parallel photo-decoding threads.',
-      'Buffered vectors in SQLite to keep lookup times < 10s and streamed extraction progress to React using Server-Sent Events.'
+      "Leveraged ArcFace and RetinaFace frameworks to index facial embeddings locally.",
+      "Reduced discovery latency by 75% via concurrent FastAPI workers with parallel photo-decoding threads.",
+      "Buffered vectors in SQLite to keep lookup times < 10s and streamed extraction progress to React using Server-Sent Events.",
     ],
-    github: 'https://github.com/blazestrom/TripFace',
-    type: 'ai',
+    github: "https://github.com/blazestrom/TripFace",
+    type: "ai",
     graphic: (
-      <svg viewBox="0 0 100 40" style={{ width: '100px', height: '40px', opacity: 0.85 }}>
+      <svg
+        viewBox="0 0 100 40"
+        style={{ width: "100px", height: "40px", opacity: 0.85 }}
+      >
         {/* Facial Bounding Box Graphic */}
-        <circle cx="50" cy="20" r="14" fill="none" stroke="var(--accent-cyan)" strokeWidth="1.5" />
+        <circle
+          cx="50"
+          cy="20"
+          r="14"
+          fill="none"
+          stroke="var(--accent-cyan)"
+          strokeWidth="1.5"
+        />
         <circle cx="45" cy="18" r="2" fill="var(--accent-cyan)" />
         <circle cx="55" cy="18" r="2" fill="var(--accent-cyan)" />
-        <path d="M 45 26 Q 50 29 55 26" fill="none" stroke="var(--accent-cyan)" strokeWidth="1.5" />
+        <path
+          d="M 45 26 Q 50 29 55 26"
+          fill="none"
+          stroke="var(--accent-cyan)"
+          strokeWidth="1.5"
+        />
         {/* Detection brackets */}
-        <path d="M 28 12 L 28 8 L 32 8" fill="none" stroke="var(--accent-cyan)" strokeWidth="1.5" />
-        <path d="M 68 12 L 68 8 L 64 8" fill="none" stroke="var(--accent-cyan)" strokeWidth="1.5" />
-        <path d="M 28 28 L 28 32 L 32 32" fill="none" stroke="var(--accent-cyan)" strokeWidth="1.5" />
-        <path d="M 68 28 L 68 32 L 64 32" fill="none" stroke="var(--accent-cyan)" strokeWidth="1.5" />
+        <path
+          d="M 28 12 L 28 8 L 32 8"
+          fill="none"
+          stroke="var(--accent-cyan)"
+          strokeWidth="1.5"
+        />
+        <path
+          d="M 68 12 L 68 8 L 64 8"
+          fill="none"
+          stroke="var(--accent-cyan)"
+          strokeWidth="1.5"
+        />
+        <path
+          d="M 28 28 L 28 32 L 32 32"
+          fill="none"
+          stroke="var(--accent-cyan)"
+          strokeWidth="1.5"
+        />
+        <path
+          d="M 68 28 L 68 32 L 64 32"
+          fill="none"
+          stroke="var(--accent-cyan)"
+          strokeWidth="1.5"
+        />
       </svg>
-    )
+    ),
   },
   {
-    title: 'Anuvad — Multilingual Captioner',
-    year: '2025',
-    tech: ['JavaScript', 'Web Speech API', 'Chrome Extension API'],
-    metric: 'SIH National Rank 1',
-    description: 'Developed a real-time, low-latency browser extension implementing on-device speech-to-text with auto regional language translation.',
+    title: "Anuvad — Multilingual Captioner",
+    year: "2025",
+    tech: ["JavaScript", "Web Speech API", "Chrome Extension API"],
+    metric: "SIH National Rank 1",
+    description:
+      "Developed a real-time, low-latency browser extension implementing on-device speech-to-text with auto regional language translation.",
     details: [
-      'Won first place at the Smart India Hackathon 2025 (SIH) national grand finale.',
-      'Designed a continuous buffer architecture for uninterrupted transcriptions during native web stream playbacks.',
-      'Created an accessible HTML caption layer rendering multilingual subtitles on-the-fly.'
+      "Won first place at the Smart India Hackathon 2025 (SIH) national grand finale.",
+      "Designed a continuous buffer architecture for uninterrupted transcriptions during native web stream playbacks.",
+      "Created an accessible HTML caption layer rendering multilingual subtitles on-the-fly.",
     ],
-    github: 'https://github.com/blazestrom',
-    type: 'fullstack',
+    github: 'https://github.com/blazestrom/Anuvad_extension',
+    type: "fullstack",
     graphic: (
-      <svg viewBox="0 0 100 40" style={{ width: '100px', height: '40px', opacity: 0.85 }}>
+      <svg
+        viewBox="0 0 100 40"
+        style={{ width: "100px", height: "40px", opacity: 0.85 }}
+      >
         {/* Speech to Caption Waveform representation */}
-        <path d="M 5 20 Q 20 5 35 20 T 65 20 T 95 20" fill="none" stroke="var(--accent-cyan)" strokeWidth="1.5" />
-        <line x1="5" y1="20" x2="95" y2="20" stroke="var(--border-color)" strokeWidth="1" />
-        <rect x="25" y="27" width="50" height="9" rx="2" fill="rgba(56, 189, 248, 0.1)" stroke="var(--border-highlight)" />
-        <text x="50" y="34" fontSize="6" fontFamily="var(--font-mono)" fill="var(--accent-cyan)" textAnchor="middle">ANUVAD</text>
+        <path
+          d="M 5 20 Q 20 5 35 20 T 65 20 T 95 20"
+          fill="none"
+          stroke="var(--accent-cyan)"
+          strokeWidth="1.5"
+        />
+        <line
+          x1="5"
+          y1="20"
+          x2="95"
+          y2="20"
+          stroke="var(--border-color)"
+          strokeWidth="1"
+        />
+        <rect
+          x="25"
+          y="27"
+          width="50"
+          height="9"
+          rx="2"
+          fill="rgba(56, 189, 248, 0.1)"
+          stroke="var(--border-highlight)"
+        />
+        <text
+          x="50"
+          y="34"
+          fontSize="6"
+          fontFamily="var(--font-mono)"
+          fill="var(--accent-cyan)"
+          textAnchor="middle"
+        >
+          ANUVAD
+        </text>
       </svg>
-    )
+    ),
   },
   {
-    title: 'Indian Road Object Detection',
-    year: '2025',
-    tech: ['Python', 'YOLOv8', 'PyTorch', 'OpenCV'],
-    metric: '57.5% Model Precision',
-    description: 'Trained and validated computer vision models engineered for non-standardized driving environments using the IDD dataset.',
+    title: "Indian Road Object Detection",
+    year: "2025",
+    tech: ["Python", "YOLOv8", "PyTorch", "OpenCV"],
+    metric: "57.5% Model Precision",
+    description:
+      "Trained and validated computer vision models engineered for non-standardized driving environments using the IDD dataset.",
     details: [
-      'Trained custom YOLOv8 models on 31,000+ localized road images featuring 10 unique classes.',
-      'Achieved 57.5% validation Precision and 34.7% mAP@50 under real-world traffic testing.',
-      'Designed XML-to-YOLO conversion script arrays mapping across a 22GB dataset structure.'
+      "Trained custom YOLOv8 models on 31,000+ localized road images featuring 10 unique classes.",
+      "Achieved 57.5% validation Precision and 34.7% mAP@50 under real-world traffic testing.",
+      "Designed XML-to-YOLO conversion script arrays mapping across a 22GB dataset structure.",
     ],
-    github: 'https://github.com/blazestrom/yolov8n-__RT-DETR',
-    type: 'ai',
+    github: "https://github.com/blazestrom/yolov8n-__RT-DETR",
+    type: "ai",
     graphic: (
-      <svg viewBox="0 0 100 40" style={{ width: '100px', height: '40px', opacity: 0.85 }}>
+      <svg
+        viewBox="0 0 100 40"
+        style={{ width: "100px", height: "40px", opacity: 0.85 }}
+      >
         {/* YOLO object grid */}
-        <rect x="15" y="8" width="70" height="24" rx="3" fill="none" stroke="var(--border-color)" strokeWidth="1" />
+        <rect
+          x="15"
+          y="8"
+          width="70"
+          height="24"
+          rx="3"
+          fill="none"
+          stroke="var(--border-color)"
+          strokeWidth="1"
+        />
         {/* Detected objects */}
-        <rect x="25" y="12" width="20" height="15" rx="2" fill="none" stroke="var(--accent-emerald)" strokeWidth="1.5" />
-        <rect x="55" y="15" width="22" height="12" rx="2" fill="none" stroke="var(--accent-amber)" strokeWidth="1.5" />
-        <text x="27" y="10" fontSize="5" fontFamily="var(--font-mono)" fill="var(--accent-emerald)">car:96%</text>
-        <text x="57" y="13" fontSize="5" fontFamily="var(--font-mono)" fill="var(--accent-amber)">truck:88%</text>
+        <rect
+          x="25"
+          y="12"
+          width="20"
+          height="15"
+          rx="2"
+          fill="none"
+          stroke="var(--accent-emerald)"
+          strokeWidth="1.5"
+        />
+        <rect
+          x="55"
+          y="15"
+          width="22"
+          height="12"
+          rx="2"
+          fill="none"
+          stroke="var(--accent-amber)"
+          strokeWidth="1.5"
+        />
+        <text
+          x="27"
+          y="10"
+          fontSize="5"
+          fontFamily="var(--font-mono)"
+          fill="var(--accent-emerald)"
+        >
+          car:96%
+        </text>
+        <text
+          x="57"
+          y="13"
+          fontSize="5"
+          fontFamily="var(--font-mono)"
+          fill="var(--accent-amber)"
+        >
+          truck:88%
+        </text>
       </svg>
-    )
-  }
+    ),
+  },
 ];
 
 export default function Projects() {
