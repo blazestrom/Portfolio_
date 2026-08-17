@@ -115,7 +115,7 @@ export default function Contact() {
               <h3 style={{ fontSize: '1.1rem', marginBottom: '1rem' }}>Coding & Professional Profiles</h3>
               <div style={{ display: 'flex', gap: '0.65rem', flexWrap: 'wrap' }}>
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/blazestrom" 
                   target="_blank" 
                   rel="noreferrer"
                   className="badge cyan"
@@ -124,7 +124,7 @@ export default function Contact() {
                   <Github size={14} /> GitHub
                 </a>
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/in/piyush-awadhiya" 
                   target="_blank" 
                   rel="noreferrer"
                   className="badge cyan"

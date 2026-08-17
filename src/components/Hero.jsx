@@ -92,7 +92,7 @@ export default function Hero() {
             </a>
 
             <a 
-              href="https://github.com" 
+              href="https://github.com/blazestrom" 
               target="_blank" 
               rel="noreferrer"
               style={{
@@ -113,7 +113,7 @@ export default function Hero() {
             </a>
 
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/piyush-awadhiya" 
               target="_blank" 
               rel="noreferrer"
               style={{

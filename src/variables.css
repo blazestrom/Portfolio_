@@ -35,6 +35,7 @@
 
   --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-normal: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --monochrome-filter: invert(1) brightness(1.2);
 }
 
 /* Light Theme Overrides */
@@ -58,4 +59,5 @@
   --gradient-glow: radial-gradient(circle at 50% 0%, rgba(2, 132, 199, 0.08), transparent 70%);
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
   --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.1);
+  --monochrome-filter: none;
 }

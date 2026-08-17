@@ -13,7 +13,7 @@ const projectsData = [
       'Prevented JVM heap overhead on high-throughput requests using Spring Data Pageable limit-offset boundaries.',
       'Tuned database access by 40% using PostgreSQL composite column indexes and resolving Hibernate N+1 fetch issues.'
     ],
-    github: 'https://github.com',
+    github: 'https://github.com/blazestrom/jobtracker-api',
     type: 'backend',
     graphic: (
       <svg viewBox="0 0 100 40" style={{ width: '100px', height: '40px', opacity: 0.85 }}>
@@ -40,7 +40,7 @@ const projectsData = [
       'Reduced discovery latency by 75% via concurrent FastAPI workers with parallel photo-decoding threads.',
       'Buffered vectors in SQLite to keep lookup times < 10s and streamed extraction progress to React using Server-Sent Events.'
     ],
-    github: 'https://github.com',
+    github: 'https://github.com/blazestrom/TripFace',
     type: 'ai',
     graphic: (
       <svg viewBox="0 0 100 40" style={{ width: '100px', height: '40px', opacity: 0.85 }}>
@@ -68,7 +68,7 @@ const projectsData = [
       'Designed a continuous buffer architecture for uninterrupted transcriptions during native web stream playbacks.',
       'Created an accessible HTML caption layer rendering multilingual subtitles on-the-fly.'
     ],
-    github: 'https://github.com',
+    github: 'https://github.com/blazestrom',
     type: 'fullstack',
     graphic: (
       <svg viewBox="0 0 100 40" style={{ width: '100px', height: '40px', opacity: 0.85 }}>
@@ -91,7 +91,7 @@ const projectsData = [
       'Achieved 57.5% validation Precision and 34.7% mAP@50 under real-world traffic testing.',
       'Designed XML-to-YOLO conversion script arrays mapping across a 22GB dataset structure.'
     ],
-    github: 'https://github.com',
+    github: 'https://github.com/blazestrom/yolov8n-__RT-DETR',
     type: 'ai',
     graphic: (
       <svg viewBox="0 0 100 40" style={{ width: '100px', height: '40px', opacity: 0.85 }}>
